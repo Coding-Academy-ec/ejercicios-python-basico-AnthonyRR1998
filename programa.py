@@ -14,29 +14,32 @@
 #     resultado = suma_1_al_10()  # Se llama a la función suma_1_al_10() para obtener el resultado
 #     print(resultado)# Se imprime el resultado de la suma
 
-## 3 Crea variables para almacenar tu edad, nombre y estatura, e imprímelas en pantalla.
-def imprimir_datos_personales(nombre, edad, estatura):
-    print(f"Nombre: {nombre}")
-    print(f"Edad: {edad}")
-    print(f"Estatura: {estatura}")# Se imprimen en pantalla los datos personales recibidos como argumentos
-
-if __name__ == "__main__":
-    # Se definen las variables con los datos personales
-    nombre = "Anthony Robayo"
-    edad = 26
-    estatura = 1.68
-    print(imprimir_datos_personales(nombre,edad,estatura))   # Se llama a la función imprimir_datos_personales() para mostrar los datos
-
-# # 4 Escribe un programa que determine si un número ingresado por el usuario es par o impar.
-# def par_o_impar(numero):
-#     # Se verifica si el número es divisible por 2
-#         # Si es divisible, se devuelve "par"
-#     else:
-#         # Si no es divisible, se devuelve "impar"
+# ## 3 Crea variables para almacenar tu edad, nombre y estatura, e imprímelas en pantalla.
+# def imprimir_datos_personales(nombre, edad, estatura):
+#     print(f"Nombre: {nombre}")
+#     print(f"Edad: {edad}")
+#     print(f"Estatura: {estatura}")# Se imprimen en pantalla los datos personales recibidos como argumentos
 
 # if __name__ == "__main__":
-#     num = int(input("Ingrese un número: "))  # Se solicita al usuario que ingrese un número
-#     print(par_o_impar(num))  # Se imprime si el número ingresado es par o impar
+#     # Se definen las variables con los datos personales
+#     nombre = "Anthony Robayo"
+#     edad = 26
+#     estatura = 1.68
+#     print(imprimir_datos_personales(nombre,edad,estatura))   # Se llama a la función imprimir_datos_personales() para mostrar los datos
+
+# 4 Escribe un programa que determine si un número ingresado por el usuario es par o impar.
+def par_o_impar(numero):
+    if numero%2==0:# Se verifica si el número es divisible por 2
+        return "par"# Si es divisible, se devuelve "par"
+    else:
+        return "impar"# Si no es divisible, se devuelve "impar"
+
+if __name__ == "__main__":
+    num = int(input("Ingrese un número: "))  # Se solicita al usuario que ingrese un número
+    num2 = int (input("Ingrese el segundo numero:"))
+    print(par_o_impar(num))  # Se imprime si el número ingresado es par o impar
+    print(par_o_impar(num2))
+    # Se solicita al usuario que ingrese un número
 
 # # 5 Crea una función que calcule el área de un círculo dado su radio.
 # import math
